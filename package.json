@@ -1,5 +1,5 @@
 {
-  "name": "dellamina/gist-templates-cli",
+  "name": "@dellamina/gist-templates-cli",
   "description": "gist templates cli",
   "version": "0.0.0",
   "author": "Mattia Della Mina",
@@ -12,6 +12,7 @@
     "@oclif/plugin-plugins": "^2.0.1",
     "@octokit/core": "^4.0.4",
     "fs-extra": "^10.1.0",
+    "handlebars": "^4.7.7",
     "inquirer": "^8.2.4",
     "node-fetch": "^3.2.10"
   },
@@ -19,6 +20,7 @@
     "@oclif/test": "^2",
     "@types/chai": "^4",
     "@types/fs-extra": "^9.0.13",
+    "@types/handlebars": "^4.1.0",
     "@types/inquirer": "^8.2.1",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.9.4",
@@ -71,8 +73,8 @@
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint . --ext .ts --config .eslintrc",
     "postpack": "shx rm -f oclif.manifest.json",
-    "posttest": "yarn lint",
-    "prepack": "yarn build && oclif manifest && oclif readme",
+    "posttest": "npm lint",
+    "prepack": "npm run build && oclif manifest && oclif readme",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md"
   },
