@@ -12,7 +12,7 @@ export default abstract class extends Command {
     return path.join(this.config.configDir, 'config.json')
   }
   
-  async apiCall(token: string, url: string, options: any) {
+  async apiCall(token: string, url: string, options?: any) {
     const octokit = new Octokit({ auth: token });
     const result = await octokit.request(url, options)
     return result
