@@ -10,7 +10,7 @@
     "@oclif/core": "^1",
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^2.0.1",
-    "@octokit/core": "^4.0.4",
+    "@octokit/core": "^4.0.5",
     "fs-extra": "^10.1.0",
     "handlebars": "^4.7.7",
     "inquirer": "^8.2.4",
