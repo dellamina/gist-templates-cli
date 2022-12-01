@@ -14,7 +14,7 @@
     "fs-extra": "^10.1.0",
     "handlebars": "^4.7.7",
     "inquirer": "^8.2.4",
-    "node-fetch": "^3.2.10"
+    "node-fetch": "^3.3.0"
   },
   "devDependencies": {
     "@oclif/test": "^2",
